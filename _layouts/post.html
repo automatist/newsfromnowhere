@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1>{{ page.name }} - {{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+    Project Description: {{ content }}
+    <img src='img/{{ page.featured-image }}'/>
+  </article>
+
+  <article class="post-content">
+  Bio: {{ page.bio }}
+  </article>
+
+  <article class="post-content">
+  Website: <a href='{{ page.website }}'>{{ page.website }}</a>
+  </article>
+
+</div>
