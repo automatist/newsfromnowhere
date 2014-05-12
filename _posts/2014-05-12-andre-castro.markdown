@@ -2,13 +2,15 @@
 layout: post
 name:  "Andre Castro"
 title: 'Narratives of Deception'
-year:   2014
+year:   2013
 categories: graduation project 
 featured-image: andrecastro.jpg
 permalink: andre-castro-narratives-of-deception
-bio: " Here's a short bio for andre bla bla bla"
----
 
+bio: "André Castro (PT) is a sound artist living in Rotterdam. His practice involves DIY, exploratory, and nonsense strategies to appropriate found media-objects, such as audio-tracks from a colossal online archive, the whispers and silences of radiophonic discourse, or the stories told in spam emails.
+"
+website: http://www.andrecastro.info/
+project-website: http://deceptionnarrativ.es/
+--- 
 
-Adıgüzel’s 30 minute video installation 'The Book' charts a journey of discovery; as she searaf.sdjfhak gh kasjhfg kasjhfg sadkjhg kfdgkfhg kdhag kdhfg adkhfg askdhfg askg akfhsdag fkjhsdgf lweuf grwqio hra;fjgalf glches for her roots she reveals facets of her identity that were previously obscured. As she progresses, a new narrative of her past emerges.
-
+Narratives of Deception narrates the dramas of the American soldier who captured Osama bin Laden; the daughter of Kenya's road minister who is threaten by her evil stepmother; the sick and religious widow who writes from her hospital bed; and the banker who finds the unclaimed fortune of his famous clients.
