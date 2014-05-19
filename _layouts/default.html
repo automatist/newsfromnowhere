@@ -3,13 +3,21 @@
 
   {% include head.html %}
 
-    <body>
+    <body style='width:100%;margin:0;padding:37px;padding-top:19px;'>
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+    <div class="main" role="main" style='width:100%;margin:0;padding:0;'>
+      <div class="typography line" style='width:100%;margin:0;padding:0;top:-28px;position:relative;' >
+
+        {% include navmenu.html %}
+
+        <div id='contain1' style="overflow: hidden; position: relative; height: 1380px;">
+          {{ content }}
+        </div>
+
+      <div class='' style="width:2px;float:right;"></div>
+
       </div>
     </div>
 
@@ -17,3 +25,7 @@
 
     </body>
 </html>
+
+
+
+

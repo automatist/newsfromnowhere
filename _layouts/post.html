@@ -3,29 +3,56 @@ layout: default
 ---
 
 
-{% include navmenu.html %}
+    <article>
 
+    <div class="content" style='width:510px;float:left'>
+      <h3>{{ page.student }} </h3>
+      <h2>{{ page.project }}</h2>
+      {{ content }}
+    </div>
+
+    <div class="content2" style='width:230px;float:left;padding-left:30px;'>
+      <img style='width:100%' src='../imgs/{{ page.featured-image }}'/>
+      </br>
+      {{ page.project-url }}
+      </br></br>
+      {{ page.bio }}
+      </br></br>
+      {{ page.bio-url }}
+      </br>
+    </div>
+
+  </article>
+
+<!--
 <div class="post">
 
   <header class="post-header">
-    <h1>{{ page.name }} - {{ page.title }}</h1>
+    <h1>{{ page.student }} - {{ page.project }}</h1>
   </header>
 
   <article class="post-content">
     Project Description: {{ content }}
-    <img style='width:500px' src='../imgs/{{ page.featured-image }}'/>
+
   </article>
+
+  <article class="post-content">
+  Website: <a href='{{ page.website }}'>{{ page.project-url }}</a>
+  </article>
+
 
   <article class="post-content">
   Bio: {{ page.bio }}
   </article>
 
+
   <article class="post-content">
-  Website: <a href='{{ page.website }}'>{{ page.website }}</a>
+  Bio-URL: <a href='{{ page.website }}'>{{ page.bio-url }}</a>
   </article>
 
-</div>
 
+</div>
+ -->
 
 
 

@@ -2,16 +2,20 @@
 layout: default
 ---
 
-{% include navmenu.html %}
 
-<div class="post">
+<div id='contain1' style="overflow:hidden;">
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-  </header>
+	<article>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+		<div class="content" style='width:510px;float:left'>
+			<h3>{{ page.title }}</h3>
+			  {{ content }}
+		</div>
+
+		<div class="content2" style='width:230px;float:left;padding-left:30px;'>
+
+		</div>
+
+	</article>
 
 </div>
