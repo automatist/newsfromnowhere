@@ -85,6 +85,8 @@ for item in data['query']['categorymembers']:
     fpath = os.path.join("_posts", "2014-05-12-"+fpath+".html")
     with open(fpath, "w") as f:
         out = u"---\n"
+        out += 'layout: post'
+        out += u"\n"
         keys = md.keys()
         keys.sort()
         for k in keys:
