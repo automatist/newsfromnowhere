@@ -11,9 +11,13 @@ def parentchild (tree):
         for child in parent:
             yield parent, child
 
+import unicodedata
+def strip_accents(s):
+   return ''.join(c for c in unicodedata.normalize('NFD', s)
+                  if unicodedata.category(c) != 'Mn')
 
-def remove_accents(data):
-    return ''.join(x for x in unicodedata.normalize('NFKD', data) if x in string.ascii_letters).lower()
+# def remove_accents(data):
+#     return ''.join(x for x in unicodedata.normalize('NFKD', data) if x in string.ascii_letters).lower()
 
 API = "http://pzwart3.wdka.hro.nl/mediawiki/api.php"
 qvars = {
@@ -80,9 +84,10 @@ for item in data['query']['categorymembers']:
         p.remove(c)
 
     md = metadata[title]
+    md['layout'] = 'post'
+    md['permalink'] = strip_accents(md.get("Student").lower().replace(" ", "-"))
 
-    fpath = remove_accents(md.get("Student").lower().replace(" ", "_"))
-    fpath = os.path.join("_posts", "2014-05-12-"+fpath+".html")
+    fpath = os.path.join("_posts", "2014-05-12-"+md['permalink']+".html")
     with open(fpath, "w") as f:
         out = u"---\n"
         keys = md.keys()

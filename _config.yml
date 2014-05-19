@@ -8,3 +8,4 @@ url: "http://www.news-from-nowhere.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
+encoding: utf-8
